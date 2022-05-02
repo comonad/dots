@@ -11,7 +11,8 @@ yay -Syu --removemake --needed --noprogressbar --noconfirm \
     firefox \
     nnn ueberzug imagemagick  \
     rofi toilet \
-    tmux 
+    tmux \
+    lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 
 # multimedia
 yay -Syu --removemake --needed --noprogressbar --noconfirm \
@@ -28,3 +29,7 @@ fish -c "fundle install"
 ln -s /usr/share/backgrounds/nordic-wallpapers/mountain_jaws.jpg ~/.wallpaper.png
 
 
+# install nnn
+yay -Syu --removemake --needed --noprogressbar --noconfirm \
+    nnn ueberzug
+curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
